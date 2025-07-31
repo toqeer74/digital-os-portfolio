@@ -19,7 +19,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui
 import { Button } from '../ui/Button'
 import { Badge } from '../ui/Badge'
 
-const Portfolio = () => {
+const EnhancedPortfolio = () => {
   const { projects, fetchProjects, loading, error } = useProjects()
   const [filteredProjects, setFilteredProjects] = useState([])
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -503,5 +503,5 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default EnhancedPortfolio
 

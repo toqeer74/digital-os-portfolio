@@ -13,6 +13,7 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
-    port: 5173
+    port: 5173,
+    allowedHosts: ["5173-ic7cvk78d3ljtzyawu0tj-93451efb.manusvm.computer"]
   }
 })

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const API_BASE_URL = 'http://localhost:5000/api'
+const API_BASE_URL = 'https://5000-ic7cvk78d3ljtzyawu0tj-93451efb.manusvm.computer/api'
 
 export const useAPI = () => {
   const [loading, setLoading] = useState(false)

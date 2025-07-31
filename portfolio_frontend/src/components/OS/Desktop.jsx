@@ -4,12 +4,26 @@ import Taskbar from './Taskbar'
 import Window from './Window'
 import StartMenu from './StartMenu'
 import CommandPalette from './CommandPalette'
+import TypewriterEffect from '../animations/TypewriterEffect'
 
 const Desktop = () => {
   const [windows, setWindows] = useState([])
   const [showStartMenu, setShowStartMenu] = useState(false)
   const [showCommandPalette, setShowCommandPalette] = useState(false)
   const [activeWindow, setActiveWindow] = useState(null)
+
+  const typingWords = [
+    'Web Developer',
+    'App Developer',
+    'Artificial Intelligence',
+    'Designing',
+    'Marketing',
+    'SEO',
+    'AI',
+    'Full Stack Engineer',
+    'UI/UX Designer',
+    'Problem Solver'
+  ]
 
   // Handle keyboard shortcuts
   useEffect(() => {
@@ -154,7 +168,7 @@ const Desktop = () => {
                 transition={{ delay: 0.4 }}
                 className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl"
               >
-                Automation. Intelligence. Design. Welcome to my Digital OS
+                <TypewriterEffect words={typingWords} speed={70} delay={1500} />
               </motion.p>
               
               <motion.div
@@ -241,4 +255,5 @@ const Desktop = () => {
 }
 
 export default Desktop
+
 
